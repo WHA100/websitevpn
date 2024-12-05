@@ -18,9 +18,22 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
 header .logo img {
-    height: 180px; /* Увеличиваем размер изображения */
+    height: 85px;
     width: auto;
+    margin-right: 10px;
+}
+
+header .logo-text {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #E67E22;
 }
 
 header nav a {
@@ -55,6 +68,10 @@ header nav a:hover {
     margin-bottom: 10px;
 }
 
+.hero p {
+    font-size: 18px;
+}
+
 .hero .cta-button {
     margin-top: 20px;
     padding: 10px 20px;
@@ -71,76 +88,84 @@ header nav a:hover {
     color: white;
 }
 
-/* Раздел "Features" */
-.features {
-    text-align: center;
+/* Секции */
+section {
     padding: 40px 20px;
+    text-align: center;
+}
+
+.features {
+    padding: 40px 20px;
+    text-align: center;
     background-color: #FFFFFF;
+    margin: 50px auto;
 }
 
 .features h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2C3E50;
 }
 
 .feature-list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .feature {
-    background-color: #ECF0F1;
-    border-radius: 10px;
+    background-color: #F7F9FA;
     padding: 20px;
-    width: 300px;
+    border-radius: 15px;
+    width: 280px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
 }
 
 .feature:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .feature h3 {
+    font-size: 22px;
     margin-bottom: 10px;
     color: #E67E22;
 }
 
-/* Раздел "Servers" */
-.servers {
-    text-align: center;
-    padding: 40px 20px;
+.feature p {
+    font-size: 16px;
+    color: #2C3E50;
 }
+
 
 .servers ul {
     list-style: none;
     padding: 0;
 }
 
-.servers li {
+.servers ul li {
+    font-size: 18px;
     margin: 5px 0;
-    font-weight: bold;
 }
 
-/* Support Section */
-#support {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-#support .email {
-    font-weight: bold;
+.support-email a {
     color: #E67E22;
-    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.support-email a:hover {
+    text-decoration: underline;
 }
 
 /* Футер */
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #2C3E50;
     color: white;
-    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
